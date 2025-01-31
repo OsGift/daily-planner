@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard | Daily Planner</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="sidebar">
+    <h2>Daily Planner</h2>
+    <ul>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="reports.html">Reports</a></li>
+      <li><a href="#" id="logout">Logout</a></li>
+    </ul>
+  </div>
+
+  <div class="main-content">
+    <h1>Task Manager</h1>
+    
+    <form id="taskForm">
+      <input type="text" id="title" placeholder="Task Title" required>
+      <input type="text" id="category" placeholder="Category">
+      <input type="text" id="project" placeholder="Project">
+      <input type="date" id="date" required>
+      <button type="submit">Add Task</button>
+    </form>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Category</th>
+          <th>Project</th>
+          <th>Date</th>
+        </tr>
+      </thead>
+      <tbody id="taskList"></tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

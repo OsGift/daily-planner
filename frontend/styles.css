@@ -1,0 +1,209 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  background-color: #f4f7f6;
+}
+
+/* Sidebar Styling */
+.sidebar {
+  width: 260px;
+  height: 100vh;
+  background: #2c3e50;
+  color: white;
+  padding: 20px;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidebar h2 {
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 15px 20px;
+  transition: background 0.3s;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+  display: block;
+}
+
+.sidebar ul li:hover {
+  background: #34495e;
+  border-radius: 5px;
+}
+
+/* Logout button */
+#logout {
+  background: #e74c3c;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 1.1em;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#logout:hover {
+  background: #c0392b;
+}
+
+/* Main Content */
+.main-content {
+  margin-left: 260px;
+  padding: 40px;
+  flex: 1;
+}
+
+/* Forms */
+form {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+form input, form button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1.1em;
+}
+
+form input:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+form button {
+  background: #3498db;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: 600;
+}
+
+form button:hover {
+  background: #2980b9;
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table th, table td {
+  padding: 15px;
+  text-align: left;
+}
+
+table thead {
+  background: #3498db;
+  color: white;
+}
+
+table tbody tr:nth-child(odd) {
+  background: #f9f9f9;
+}
+
+table tbody tr:hover {
+  background: #ecf0f1;
+}
+
+/* Landing Page (index.html) */
+.container {
+  text-align: center;
+  margin: auto;
+  max-width: 500px;
+  padding: 50px;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #2c3e50;
+}
+
+p {
+  font-size: 1.2em;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 20px;
+  font-size: 1.2em;
+  color: white;
+  background: #3498db;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 10px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #2980b9;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .sidebar ul li {
+    display: inline-block;
+    padding: 10px;
+  }
+
+  .main-content {
+    margin-left: 0;
+    padding: 20px;
+  }
+
+  table {
+    font-size: 0.9em;
+  }
+}
